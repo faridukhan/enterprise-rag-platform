@@ -1,0 +1,43 @@
+# Enterprise RAG Platform — Core Dependencies
+# --------------------------------------------
+# These install cleanly on Windows with no C++ build tools required.
+#
+# Install:
+#   pip install -r requirements.txt
+#
+# For heavy ML/evaluation extras (requires C++ build tools):
+#   pip install -r requirements-extras.txt
+
+# Azure OpenAI SDK
+openai>=1.30.0,<2.0.0
+
+# Azure SDKs
+azure-search-documents>=11.4.0,<12.0.0
+azure-storage-blob>=12.19.0,<13.0.0
+azure-identity>=1.16.0,<2.0.0
+
+# LangChain core — orchestration layer
+langchain>=0.2.0,<0.3.0
+langchain-openai>=0.1.0,<0.2.0
+
+# Environment variable management
+python-dotenv>=1.0.0,<2.0.0
+
+# Data processing
+pandas>=2.0.0,<3.0.0
+numpy>=1.26.0,<2.0.0
+
+# PDF and document processing
+pypdf>=4.0.0,<5.0.0
+python-docx>=1.1.0,<2.0.0
+
+# API layer
+fastapi>=0.111.0,<1.0.0
+uvicorn[standard]>=0.29.0,<1.0.0
+
+# Testing
+pytest>=8.0.0,<9.0.0
+pytest-asyncio>=0.23.0,<1.0.0
+
+# Code quality
+ruff>=0.4.0,<1.0.0
